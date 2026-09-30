@@ -67,7 +67,7 @@ export class CheckBoxPage extends BasePage {
 
   async checkItem(title: string): Promise<void> {
     const checkbox = this.getCheckboxLocator(title);
-    await checkbox.waitFor({ state: 'attached', timeout: 10000 });
+    await checkbox.waitFor({ state: 'visible', timeout: 10000 });
     await checkbox.check({ force: true });
   }
 
