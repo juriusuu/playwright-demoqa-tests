@@ -1,6 +1,6 @@
 import { test } from '@playwright/test';
-import { TextBoxPage } from '../pages/elements/TextBoxPage';
-import { textboxData } from '../data/textBoxData';
+import { TextBoxPage } from '../../pages/elements/TextBoxPage';
+import { textboxData } from '../../data/textBoxData';
 
 test('Text Box workflow', async ({ page }) => {
   const textBox = new TextBoxPage(page);

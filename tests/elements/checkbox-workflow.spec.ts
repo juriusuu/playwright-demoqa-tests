@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
-import { CheckBoxPage } from '../pages/elements/CheckBoxPage';
-import { checkBoxTestData } from '../data/CheckBoxPageData';
+import { CheckBoxPage } from '../../pages/elements/CheckBoxPage';
+import { checkBoxTestData } from '../../data/CheckBoxPageData';
 
 test.describe('Elements Suite: Check_Box', () => {
   let checkBoxPage: CheckBoxPage;
