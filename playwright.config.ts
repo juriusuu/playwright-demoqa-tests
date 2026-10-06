@@ -77,3 +77,74 @@ export default defineConfig({
   //   reuseExistingServer: !process.env.CI,
   // },
 });
+
+// import { defineConfig, devices } from '@playwright/test';
+
+// export default defineConfig({
+//   testDir: './tests',
+//   /* Maximum time a single test can run */
+//   timeout: 60000,
+//   /* Disable parallel execution locally for cleaner step debugging */
+//   fullyParallel: false,
+//   forbidOnly: !!process.env.CI,
+//   retries: process.env.CI ? 2 : 0,
+//   workers: process.env.CI ? 1 : undefined,
+//   reporter: 'html',
+
+//   use: {
+//     /* Always record traces so UI Mode can display full Network, DOM, and Action steps */
+//     trace: 'on',
+
+//     /* Real browser User-Agent prevents DemoQA Cloudflare blocks on Firefox & WebKit */
+//     userAgent:
+//       'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+
+//     /* Explicit timeouts for navigation and actions */
+//     navigationTimeout: 30000,
+//     actionTimeout: 15000,
+//   },
+
+//   projects: [
+//     // {
+//     //   name: 'Google Chrome',
+//     //   use: {
+//     //     ...devices['Desktop Chrome'],
+//     //     channel: 'chrome',
+//     //     launchOptions: {
+//     //       args: ['--disable-blink-features=AutomationControlled'],
+//     //     },
+//     //   },
+//     // },
+
+//     {
+//       name: 'chromium',
+//       use: {
+//         ...devices['Desktop Chrome'],
+//         launchOptions: {
+//           args: ['--disable-blink-features=AutomationControlled'],
+//         },
+//       },
+//     },
+
+//     {
+//       name: 'firefox',
+//       use: {
+//         ...devices['Desktop Firefox'],
+//         /* Disable automation flags for Firefox */
+//         launchOptions: {
+//           firefoxUserPrefs: {
+//             'dom.webdriver.enabled': false,
+//             'useAutomationExtension': false,
+//           },
+//         },
+//       },
+//     },
+
+//     {
+//       name: 'webkit',
+//       use: {
+//         ...devices['Desktop Safari'],
+//       },
+//     },
+//   ],
+// });
