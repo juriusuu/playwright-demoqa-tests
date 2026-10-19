@@ -8,7 +8,7 @@ test('fill out registration form on DemoQA', async ({ page }) => {
   await page.getByRole('textbox', { name: 'First Name' }).fill('Fernando');
   await page.getByRole('textbox', { name: 'Last Name' }).fill('Poe');
   await page.getByRole('textbox', { name: 'UserName' }).fill('fernando');
-  await page.getByRole('textbox', { name: 'Password' }).fill('fernandopoe@123');
+  await page.getByRole('textbox', { name: 'Password' }).fill('Fernandopoe@123');
 
   // Submit the form
   await page.getByRole('button', { name: 'Register' }).click();
