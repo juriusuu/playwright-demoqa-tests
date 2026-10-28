@@ -18,7 +18,7 @@ Continuous Integration: Automated workflows set up via GitHub Actions (.github/w
 
 📁 Repository Structure
 
-playwright-demoqa-tests/
+```playwright-demoqa-tests/
 ├── .github/workflows/       # CI/CD pipeline definitions
 ├── pages/                   # Page Object Model classes
 │   ├── alerts/              # Alert page models
@@ -43,7 +43,7 @@ playwright-demoqa-tests/
 │   └── widgets/             # Accordian, datepicker, slider, tooltips specs
 ├── playwright.config.ts     # Global Playwright configuration
 ├── package.json             # Project dependencies and test scripts
-└── tsconfig.json            # TypeScript compiler options
+└── tsconfig.json            # TypeScript compiler options```
 
 
 🚀 Getting Started
